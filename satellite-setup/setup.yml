@@ -8,4 +8,4 @@
     - name: Add ssh pub key to ec2-user
       ansible.builtin.authorized_key:
         user: ec2-user
-        authorized_key: "{{ satellite_pub_ssh_key }}"
+        key: "{{ satellite_pub_ssh_key }}"
