@@ -2,9 +2,6 @@
 - name: Patch systems
   hosts: all
   become: true
-  vars:
-    check_only: true
-
   tasks:
     - name: Check operating system
       ansible.builtin.assert:
